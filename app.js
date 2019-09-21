@@ -115,6 +115,6 @@ app.delete("/blogs/:id", (req,res)=>{
 });
 
 
-app.listen(2468, ( )=>{
+app.listen(process.env.PORT || 2468, ( )=>{
 	console.log('server on');
 });
